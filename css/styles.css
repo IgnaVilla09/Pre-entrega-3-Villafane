@@ -10,12 +10,14 @@
   height: 170px;
   background: #000;
 }
+
 .nav-container-menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 15px;
 }
+
 .nav-container img {
   display: block;
   width: 80px;
@@ -23,11 +25,13 @@
   cursor: pointer;
   box-shadow: 3px -3px 50px 6px rgba(255, 255, 255, 0.3);
 }
+
 .nav-container__list {
   margin-top: 40px;
   text-align: center;
   justify-content: center;
 }
+
 .nav-container a {
   display: inline-block;
   margin: 0 10px 0 10px;
@@ -35,10 +39,12 @@
   color: #fff;
   text-decoration: none;
 }
+
 .nav-container li {
   padding: 5px;
   font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
+
 .nav-container li:hover {
   background: #f2f2f2;
   border-radius: 50px;
@@ -52,16 +58,19 @@
   color: #fff;
   padding: 50px;
 }
+
 .banner-container__title {
   display: grid;
   grid-template-columns: 600px;
   grid-template-rows: 90px 220px 100px;
 }
+
 .banner-container .search-btn {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .banner-container .search-btn input {
   height: 50px;
   width: 100%;
@@ -70,92 +79,37 @@
   font-size: 1.23em;
   outline: none;
 }
+
 .banner-container .search-btn input:focus {
-  border-bottom: 2px solid #003399;
+  border-bottom: 2px solid #0066cc;
 }
-.banner-container .search-btn input::placeholder {
-  color: #003399;
+
+.banner-container .search-btn input::-moz-placeholder {
+  color: #0066cc;
   font-size: 1em;
 }
+
+.banner-container .search-btn input::placeholder {
+  color: #0066cc;
+  font-size: 1em;
+}
+
 .banner-container .search-btn i {
   font-size: 25px;
   color: #fff;
-  background: #003399;
+  background: #0066cc;
   padding: 15px;
   border-radius: 50px;
   cursor: pointer;
 }
-.banner-container__img-example .casa1 {
-  width: 450px;
-  height: 300px;
-  right: 150px;
-  top: 250px;
-  position: absolute;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-.banner-container__img-example .casa2 {
-  width: 450px;
-  height: 300px;
-  right: 450px;
-  top: 500px;
-  position: absolute;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-.banner-container__img-example .casa3 {
-  width: 290px;
-  height: 200px;
-  right: 100px;
-  top: 610px;
-  position: absolute;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-.banner-container__img-example img {
-  transition: all 0.4s ease;
-}
-.banner-container__img-example img:hover {
-  transform: scale(1.2);
-}
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
-  .nav-container {
-    height: 200px;
-  }
-  .banner-container {
-    height: 500px;
-  }
-  .banner-container__title {
+@media screen and (min-width: 767px) and (max-widht: 1024px) {
+  .banner-container .banner-container__title {
+    display: grid;
+    margin: 0 auto;
     grid-template-columns: 600px;
+    grid-template-rows: 90px 220px 100px;
   }
-}
-@media screen and (min-width: 467px) and (max-width: 766px) {
-  .banner-container {
-    height: 500px;
-  }
-  .banner-container__title {
-    grid-template-columns: 350px;
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 466px) {
-  .nav-container {
-    height: 200px;
-  }
-  .banner-container {
-    height: 500px;
-  }
-  .banner-container__title {
-    grid-template-columns: 300px;
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 280px) {
-  .banner-container {
-    height: 500px;
-  }
-  .banner-container__title {
-    grid-template-columns: 200px;
-    font-size: 10px;
-  }
-}
+} 
 
 /*# sourceMappingURL=styles.css.map */
