@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitte Propiedades - Inicio </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-container-menu">
+                <img src="../assets/img/logo.jpg" alt="Logo Elite Propiedades">
+                <ul class="nav-container__list">
+                    <a href="../index.html"><li class="option-menu">Inicio</li></a>
+                    <a href="inmuebles.html"><li class="option-menu">Inmuebles</li></a>
+                    <a href="uploadinmuebles.html"><li class="option-menu">Publica tu inmueble</li></a>
+                    <a href="contacto.html"><li class="option-menu">Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="propiedades-container">
+            <h2>PUBLICA TU INMUEBLE</h2>
+            <form class="propiedades-container__formulario">
+                <label for="archivos">Tipo de publicación:</label>
+                <select name="tipo" id="tipo">
+                    <option value="">Alquiler</option>
+                    <option value="">Venta</option>
+                    <option value="">Terreno</option>
+                </select>
+                <label for="archivos">Ubicación</label>
+                <select class="propiedades-container__opcionnes--municipio" name="Ubicación" id="Ubicación">
+                    <option value="">General Alvear</option>
+                    <option value="">Godoy Cruz</option>
+                    <option value="">Junín</option>
+                    <option value="">La Paz</option>
+                    <option value="">Las Heras</option>
+                    <option value="">Luján de Cuyo</option>
+                    <option value="">Maipú</option>
+                    <option value="">Malargue</option>
+                    <option value="">Ciudad de Mendoza</option>
+                    <option value="">Rivadavia</option>
+                    <option value="">San Martín</option>
+                    <option value="">San Rafael</option>
+                    <option value="">Santa Rosa</option>
+                    <option value="">Tunuyán</option>
+                    <option value="">Tupungato</option>
+                    <option value="">Guaymallén</option>
+                    <option value="">San Carlos</option>
+                    <option value="">Lavalle</option>
+                </select>
+                <label for="">Descripción</label>
+                <textarea name="" id="" cols="30" rows="10" required placeholder="Escriba una breve descripción aquí"></textarea>
+                <label for="">Correo electronico</label>
+                <input type="email" required name="" id="">
+                <label for="archivos">Imagenes:</label>
+                <input type="file" id="archivos" name="archivos[]" required multiple>
+                <input type="submit" value="Enviar" id="btn-enviar">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h4>TODOS LOS DERECHOS RESERVADOS - NTECH</h4>
+            <div class="footer-container__redes">
+                <a href=""><li>Instagram</li></a>
+                <a href=""><li>Email</li></a>
+                <a href=""><li>WhatsApp</li></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
