@@ -1,3 +1,4 @@
+//RESEET
 * {
     margin: 0;
     padding: 0;                 /*RESEET*/
@@ -5,19 +6,22 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+//Variables
+
+$COLOR-SECUNDARIO: #003399;
+$TAMANIO-TITULOS: 3em;
+
+//Barra navegación
 .nav-container {
     width: 100%;
     height: 170px;
     background: #000;
-    
-
         &-menu {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             padding-top: 15px;
         } 
-
         img {
             display: block;
             width: 80px;
@@ -51,7 +55,7 @@
             color: #000;
         }
 }
-
+//Banner
 .banner-container {
     background-image: url(https://wallpaperaccess.com/full/2178173.jpg);
     width: 100%;
@@ -80,18 +84,18 @@
             }
 
             input:focus {
-                border-bottom: 2px solid #003399;
+                border-bottom: 2px solid $COLOR-SECUNDARIO;
             }
 
             input::placeholder {
-                color: #003399;
+                color: $COLOR-SECUNDARIO;
                 font-size: 1em;
             }
 
             i {
                 font-size: 25px;
                 color: #fff;
-                background: #003399;
+                background: $COLOR-SECUNDARIO;
                 padding: 15px;
                 border-radius: 50px;
                 cursor: pointer;
@@ -99,31 +103,36 @@
     }
 
     &__img-example {
-        .casa1 {
+
+        //Extends 
+
+        .img-banner-desktop {
             width: 450px;
-            height: 300px;
-            right: 150px;
-            top: 250px;
+            height: 300px;            
             position: absolute;
+        }
+
+        .casa1 {
+            @extend .img-banner-desktop;
+            right: 150px;
+            top: 250px;            
             clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
         }
 
         .casa2 {
             
-            width: 450px;
-            height: 300px;
+            @extend .img-banner-desktop;
             right: 450px;
-            top: 500px;
-            position: absolute;
+            top: 500px;            
             clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
         }
 
         .casa3 {            
             width: 320px;
             height: 220px;
+            position: absolute;
             right: 100px;
             top: 610px;
-            position: absolute;
             clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
         }
 
@@ -139,12 +148,12 @@
 
     
 }
-
+//main index
 .destacados-container {
     h2 {
         margin: 40px 0 40px 0;
         text-align: center;
-        font-size: 3em;
+        font-size: $TAMANIO-TITULOS;
     }
     
     &__propiedades {
@@ -175,13 +184,13 @@
                     text-decoration: none;
                     color: #fff;
                     border-radius: 10px;
-                    background: #003399;
+                    background: $COLOR-SECUNDARIO;
                     font-size: .9em;
                 }
         }
     }
 }
-
+//main inmuebles.html
 .inmuebles-container {
      
     &__propiedades {
@@ -213,7 +222,7 @@
                     text-decoration: none;
                     color: #fff;
                     border-radius: 10px;
-                    background: #003399;
+                    background: $COLOR-SECUNDARIO;
                     font-size: .9em;
                 }
         }
@@ -222,10 +231,9 @@
     h2 {
         margin: 40px 0 40px 0;
         text-align: center;
-        font-size: 3em;
+        font-size: $TAMANIO-TITULOS;
     }
 }
-
 .separador {
     width: 90vw;
     height: 2px;
@@ -233,7 +241,7 @@
     text-align: center;
     margin: 40px auto;
 }
-
+//main upload inmuebles
 .propiedades-container {
 
     display: flex;
@@ -241,7 +249,7 @@
     align-items: center;
 
         h2 {
-            font-size: 3.2em;
+            font-size: $TAMANIO-TITULOS;
             margin: 20px 0;
             text-align: center;
         }
@@ -257,8 +265,8 @@
                 select {
                     margin: 5px;
                     background: #e8e8e8;
-                    color: #222;
-                    height: 30px;
+                    color: $COLOR-SECUNDARIO;
+                    height: 50px;
                     width: 10vw;
                     cursor: pointer;
                 }
@@ -278,7 +286,7 @@
                 }
 
                 textarea:focus {
-                    border-bottom: 3px solid #0009;
+                    border-bottom: 3px solid $COLOR-SECUNDARIO;
                     background: #f0f0f0;
                 }
 
@@ -290,7 +298,7 @@
                 }
 
                 input:focus {
-                    border-bottom: 3px solid #0009;
+                    border-bottom: 3px solid $COLOR-SECUNDARIO;
                     background: #f0f0f0;
                 }
 
@@ -298,19 +306,76 @@
                     margin: 20px;
                     width: 100px;
                     padding: 10px;
-                    background: #eee;
+                    color: #fff;
+                    background: $COLOR-SECUNDARIO;
                     border: 2px solid #0003;
                     border-radius: 20px;
                     cursor: pointer;
                 }
 
                 #btn-enviar:hover {
-                    background: #000;
-                    color: white;
+                    background: #fff;
+                    color: $COLOR-SECUNDARIO;
+                    border: 2px solid $COLOR-SECUNDARIO;
                 }
         }
 }
+//main contacto.html
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    margin: 40px auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 950px;
+    border: 2px solid #0003;
+        .contact-container__formulario-de-contacto {
+            display: flex;
+            flex-direction: column;
+                label {
+                    margin: 10px 0;
+                }
+                input {
+                    height: 40px;
+                    padding: 5px;
+                    outline: none;
+                }                
+                input:focus {
+                    border-bottom: 4px solid #000;
+                    background: #e4e4e4;
+                }
+                textarea {
+                    padding: 5px;
+                    outline: none;
+                    resize: none;
+                }
 
+                textarea:focus {
+                    border-bottom: 4px solid #000;
+                    background: #e4e4e4;
+                }
+
+                #btn-enviar-contact {
+                    margin: 20px 0;
+                    width: 80px;
+                    padding: 10px;
+                    border: none;
+                    background: $COLOR-SECUNDARIO;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                #btn-enviar-contact:active {
+                    background: #fff;
+                    color: $COLOR-SECUNDARIO;
+                    border: 2px solid $COLOR-SECUNDARIO;
+                }
+        }
+}
+//footer
 .footer-container {
     width: 100%;
     height: 150px;
@@ -327,26 +392,44 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-
-                a {
-                    text-decoration: none;
+                
+                
+                li {
                     color: #fff;
                     margin: 20px 10px;
                     padding: 5px;
                 }
 
-                a:hover {
-                    background: #bbb;
-                    color: #000;
-                    border-radius: 5px;
+                i{
+                    margin-right: 5px;
                 }
+
+                a {
+                    text-decoration: none;
+                }
+
+                $Redes: (
+                    Instagram: #e1306c,
+                    Email: #fff,
+                    WhatsApp: #25D366,
+                );
+
+                @each $red, $color in $Redes {
+                    .footer-container__redes--#{$red}{
+                        li:hover {
+                            background-color: $color;
+                            border-radius: 5px;
+                            color: #000;
+                        }
+                    }
+                }                
 
                 li {
                     list-style: none;
                 }
         }
 }
-
+//RESPONSIVE OPTIMIZACIÓN
 @media screen and (min-width: 913px) and (max-width:1400px) {
     .nav-container {
         height: 200px;
@@ -390,25 +473,27 @@
                 font-size: 12px;
             }
             &__img-example {
-                .casa1 {
+                .img-banner-tablet {
                     width: 180px;
                     height: 125px;
-                    right: 10px;
+                }
+
+                .casa1 {
+                    @extend .img-banner-tablet;
+                    left: 410px;
                     top: 220px;
                 }
     
                 .casa2 {
-                    width: 180px;
-                    height: 125px;
-                    right: 10px;
-                    top: 360px;
+                    @extend .img-banner-tablet;
+                    right: 50px;
+                    top: 320px;
                 }
     
                 .casa3 {
-                    width: 180px;
-                    height: 125px;
-                    right: 10px;
-                    top: 500px;
+                    @extend .img-banner-tablet;
+                    right: 230px;
+                    top: 420px;
                 }
             }
     }
@@ -420,6 +505,34 @@
             font-size: 2em;
         }
     }
+    
+    .propiedades-container {
+        &__formulario {
+            width: 680px;
+            select {
+                height: 50px;
+                width: 18vw;
+            }
+            textarea {
+                width: 40vw;
+            }
+        }
+    }
+
+    .contact-container {
+        grid-template-rows: repeat(2,400px);
+        grid-template-columns: 480px;
+        justify-items: center;
+        padding: 0px;
+        gap: 20px;
+        width: 480px;
+        height: 900px;
+
+            img {
+                width: 250px;
+            }
+    }
+    
 }
 
 @media screen and (max-width:466px) {
@@ -433,26 +546,56 @@
                 font-size: 12px;
             }
             &__img-example {
-                .casa1 {
+
+                .img-banner-mobile {
                     width: 180px;
                     height: 125px;
+                }
+                .casa1 {
+                    @extend .img-banner-mobile;
                     right: 70px;
                     top: 700px;
                 }
     
                 .casa2 {
-                    width:180px;
-                    height: 125px;
+                    @extend .img-banner-mobile;
                     left: 20px;
                     top: 820px;
                 }
     
                 .casa3 {
-                    width: 180px;
-                    height: 125px;
+                    @extend .img-banner-mobile;
                     right: 25px;
                     top: 920px;
                 }
+            }
+    }
+    .propiedades-container {
+        &__formulario {
+            width: 300px;
+            select {
+                height: 50px;
+                width: 40vw;
+            }
+            textarea {
+                width: 50vw;
+            }
+
+            input {
+                width: 50vw;
+            }
+        }
+    }
+    .contact-container {
+        grid-template-rows: repeat(2,350px);
+        grid-template-columns: 320px;
+        justify-items: center;
+        padding: 0px;
+        width: 320px;
+        height: 900px;
+
+            img {
+                width: 200px;
             }
     }
 }
@@ -467,23 +610,25 @@
             }
 
             &__img-example {
-                .casa1 {
+                .img-banner-mobile-fold {
                     width: 180px;
-                    height: 150px;
+                    height: 125px;
+                }
+
+                .casa1 {
+                    @extend .img-banner-mobile-fold;
                     right: 50px;
                     top: 700px;
                 }
     
                 .casa2 {
-                    width: 180px;
-                    height: 150px;
+                    @extend .img-banner-mobile-fold;
                     left: 40px;
                     top: 860px;
                 }
     
                 .casa3 {
-                    width: 180px;
-                    height: 150px;
+                    @extend .img-banner-mobile-fold;
                     right: 50px;
                     top: 1020px;
                 }
@@ -498,6 +643,33 @@
         }
     }
 
+    .propiedades-container {
+        &__formulario {
+            width: 220px;
+            select {
+                height: 50px;
+                width: 40vw;
+            }
+            textarea {
+                width: 45vw;
+            }
+        }
+    }
+
+    .contact-container {
+        grid-template-rows: repeat(2,350px);
+        grid-template-columns: 260px;
+        justify-items: center;
+        padding: 0px;
+        width: 260px;
+        height: 900px;
+
+            img {
+                margin-top: -60px;
+                width: 200px;
+            }
+    }
+
     .footer-container {
         height: 250px;
 
@@ -505,6 +677,5 @@
                 font-size: 20px;
             }
     }
-
     
 }

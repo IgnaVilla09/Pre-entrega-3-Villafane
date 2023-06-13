@@ -29,43 +29,18 @@
     </header>
 
     <main>
-        <div class="propiedades-container">
-            <h2>PUBLICA TU INMUEBLE</h2>
-            <form class="propiedades-container__formulario">
-                <label for="archivos">Tipo de publicación:</label>
-                <select name="tipo" id="tipo">
-                    <option value="">Alquiler</option>
-                    <option value="">Venta</option>
-                    <option value="">Terreno</option>
-                </select>
-                <label for="archivos">Ubicación</label>
-                <select class="propiedades-container__opcionnes--municipio" name="Ubicación" id="Ubicación">
-                    <option value="">General Alvear</option>
-                    <option value="">Godoy Cruz</option>
-                    <option value="">Junín</option>
-                    <option value="">La Paz</option>
-                    <option value="">Las Heras</option>
-                    <option value="">Luján de Cuyo</option>
-                    <option value="">Maipú</option>
-                    <option value="">Malargue</option>
-                    <option value="">Ciudad de Mendoza</option>
-                    <option value="">Rivadavia</option>
-                    <option value="">San Martín</option>
-                    <option value="">San Rafael</option>
-                    <option value="">Santa Rosa</option>
-                    <option value="">Tunuyán</option>
-                    <option value="">Tupungato</option>
-                    <option value="">Guaymallén</option>
-                    <option value="">San Carlos</option>
-                    <option value="">Lavalle</option>
-                </select>
-                <label for="">Descripción</label>
-                <textarea name="" id="" cols="30" rows="10" required placeholder="Escriba una breve descripción aquí"></textarea>
+        <div class="contact-container">
+            <img src="../assets/img/vectores/mail.avif" alt="">
+            <form class="contact-container__formulario-de-contacto">
+                <label for="">Nombre y Apellido</label> 
+                <input type="text" name="" id="" placeholder="Escribe tu Nombre" required>
                 <label for="">Correo electrónico</label>
-                <input type="email" required name="" id="">
-                <label for="archivos">Imagenes:</label>
-                <input type="file" id="archivos" name="archivos[]" required multiple>
-                <input type="submit" value="Enviar" id="btn-enviar">
+                <input type="email" name="" id="" placeholder="Escriba su correo electrónico" required>
+                <label for="">Asunto</label>
+                <input type="text" name="" id="" placeholder="Escribe tu asunto aquí" required>
+                <label for="">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Enviar" id="btn-enviar-contact">
             </form>
         </div>
     </main>

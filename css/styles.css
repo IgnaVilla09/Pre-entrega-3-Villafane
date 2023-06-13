@@ -85,28 +85,27 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.banner-container__img-example .casa1 {
+.banner-container__img-example .img-banner-desktop, .banner-container__img-example .casa2, .banner-container__img-example .casa1 {
   width: 450px;
   height: 300px;
+  position: absolute;
+}
+.banner-container__img-example .casa1 {
   right: 150px;
   top: 250px;
-  position: absolute;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .banner-container__img-example .casa2 {
-  width: 450px;
-  height: 300px;
   right: 450px;
   top: 500px;
-  position: absolute;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .banner-container__img-example .casa3 {
   width: 320px;
   height: 220px;
+  position: absolute;
   right: 100px;
   top: 610px;
-  position: absolute;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .banner-container__img-example img {
@@ -203,7 +202,7 @@
   align-items: center;
 }
 .propiedades-container h2 {
-  font-size: 3.2em;
+  font-size: 3em;
   margin: 20px 0;
   text-align: center;
 }
@@ -218,8 +217,8 @@
 .propiedades-container__formulario select {
   margin: 5px;
   background: #e8e8e8;
-  color: #222;
-  height: 30px;
+  color: #003399;
+  height: 50px;
   width: 10vw;
   cursor: pointer;
 }
@@ -236,7 +235,7 @@
   outline: none;
 }
 .propiedades-container__formulario textarea:focus {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid #003399;
   background: #f0f0f0;
 }
 .propiedades-container__formulario input {
@@ -246,21 +245,75 @@
   width: 20vw;
 }
 .propiedades-container__formulario input:focus {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid #003399;
   background: #f0f0f0;
 }
 .propiedades-container__formulario #btn-enviar {
   margin: 20px;
   width: 100px;
   padding: 10px;
-  background: #eee;
+  color: #fff;
+  background: #003399;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   cursor: pointer;
 }
 .propiedades-container__formulario #btn-enviar:hover {
-  background: #000;
-  color: white;
+  background: #fff;
+  color: #003399;
+  border: 2px solid #003399;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  margin: 40px auto;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 950px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.contact-container .contact-container__formulario-de-contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-container__formulario-de-contacto label {
+  margin: 10px 0;
+}
+.contact-container .contact-container__formulario-de-contacto input {
+  height: 40px;
+  padding: 5px;
+  outline: none;
+}
+.contact-container .contact-container__formulario-de-contacto input:focus {
+  border-bottom: 4px solid #000;
+  background: #e4e4e4;
+}
+.contact-container .contact-container__formulario-de-contacto textarea {
+  padding: 5px;
+  outline: none;
+  resize: none;
+}
+.contact-container .contact-container__formulario-de-contacto textarea:focus {
+  border-bottom: 4px solid #000;
+  background: #e4e4e4;
+}
+.contact-container .contact-container__formulario-de-contacto #btn-enviar-contact {
+  margin: 20px 0;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  background: #003399;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-container .contact-container__formulario-de-contacto #btn-enviar-contact:active {
+  background: #fff;
+  color: #003399;
+  border: 2px solid #003399;
 }
 
 .footer-container {
@@ -279,16 +332,31 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.footer-container__redes a {
-  text-decoration: none;
+.footer-container__redes li {
   color: #fff;
   margin: 20px 10px;
   padding: 5px;
 }
-.footer-container__redes a:hover {
-  background: #bbb;
-  color: #000;
+.footer-container__redes i {
+  margin-right: 5px;
+}
+.footer-container__redes a {
+  text-decoration: none;
+}
+.footer-container__redes .footer-container__redes--Instagram li:hover {
+  background-color: #e1306c;
   border-radius: 5px;
+  color: #000;
+}
+.footer-container__redes .footer-container__redes--Email li:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+}
+.footer-container__redes .footer-container__redes--WhatsApp li:hover {
+  background-color: #25D366;
+  border-radius: 5px;
+  color: #000;
 }
 .footer-container__redes li {
   list-style: none;
@@ -331,28 +399,48 @@
     grid-template-columns: 280px;
     font-size: 12px;
   }
-  .banner-container__img-example .casa1 {
+  .banner-container__img-example .img-banner-tablet, .banner-container__img-example .casa3, .banner-container__img-example .casa2, .banner-container__img-example .casa1 {
     width: 180px;
     height: 125px;
-    right: 10px;
+  }
+  .banner-container__img-example .casa1 {
+    left: 410px;
     top: 220px;
   }
   .banner-container__img-example .casa2 {
-    width: 180px;
-    height: 125px;
-    right: 10px;
-    top: 360px;
+    right: 50px;
+    top: 320px;
   }
   .banner-container__img-example .casa3 {
-    width: 180px;
-    height: 125px;
-    right: 10px;
-    top: 500px;
+    right: 230px;
+    top: 420px;
   }
   .destacados-container h2 {
     margin: 40px 0 40px 0;
     text-align: center;
     font-size: 2em;
+  }
+  .propiedades-container__formulario {
+    width: 680px;
+  }
+  .propiedades-container__formulario select {
+    height: 50px;
+    width: 18vw;
+  }
+  .propiedades-container__formulario textarea {
+    width: 40vw;
+  }
+  .contact-container {
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: 480px;
+    justify-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 480px;
+    height: 900px;
+  }
+  .contact-container img {
+    width: 250px;
   }
 }
 @media screen and (max-width: 466px) {
@@ -366,23 +454,45 @@
     grid-template-columns: 300px;
     font-size: 12px;
   }
-  .banner-container__img-example .casa1 {
+  .banner-container__img-example .img-banner-mobile, .banner-container__img-example .casa3, .banner-container__img-example .casa2, .banner-container__img-example .casa1 {
     width: 180px;
     height: 125px;
+  }
+  .banner-container__img-example .casa1 {
     right: 70px;
     top: 700px;
   }
   .banner-container__img-example .casa2 {
-    width: 180px;
-    height: 125px;
     left: 20px;
     top: 820px;
   }
   .banner-container__img-example .casa3 {
-    width: 180px;
-    height: 125px;
     right: 25px;
     top: 920px;
+  }
+  .propiedades-container__formulario {
+    width: 300px;
+  }
+  .propiedades-container__formulario select {
+    height: 50px;
+    width: 40vw;
+  }
+  .propiedades-container__formulario textarea {
+    width: 50vw;
+  }
+  .propiedades-container__formulario input {
+    width: 50vw;
+  }
+  .contact-container {
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: 320px;
+    justify-items: center;
+    padding: 0px;
+    width: 320px;
+    height: 900px;
+  }
+  .contact-container img {
+    width: 200px;
   }
 }
 @media screen and (max-width: 280px) {
@@ -393,21 +503,19 @@
     grid-template-columns: 200px;
     font-size: 10px;
   }
-  .banner-container__img-example .casa1 {
+  .banner-container__img-example .img-banner-mobile-fold, .banner-container__img-example .casa3, .banner-container__img-example .casa2, .banner-container__img-example .casa1 {
     width: 180px;
-    height: 150px;
+    height: 125px;
+  }
+  .banner-container__img-example .casa1 {
     right: 50px;
     top: 700px;
   }
   .banner-container__img-example .casa2 {
-    width: 180px;
-    height: 150px;
     left: 40px;
     top: 860px;
   }
   .banner-container__img-example .casa3 {
-    width: 180px;
-    height: 150px;
     right: 50px;
     top: 1020px;
   }
@@ -415,6 +523,28 @@
     margin: 40px 0 40px 0;
     text-align: center;
     font-size: 1.5em;
+  }
+  .propiedades-container__formulario {
+    width: 220px;
+  }
+  .propiedades-container__formulario select {
+    height: 50px;
+    width: 40vw;
+  }
+  .propiedades-container__formulario textarea {
+    width: 45vw;
+  }
+  .contact-container {
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: 260px;
+    justify-items: center;
+    padding: 0px;
+    width: 260px;
+    height: 900px;
+  }
+  .contact-container img {
+    margin-top: -60px;
+    width: 200px;
   }
   .footer-container {
     height: 250px;
