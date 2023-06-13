@@ -292,6 +292,93 @@
   border: 2px solid #003399;
 }
 
+.btn-back {
+  margin: 20px 10px;
+}
+.btn-back a {
+  text-decoration: none;
+  color: #fff;
+  background: #003399;
+  padding: 5px;
+  border-radius: 10px;
+}
+.btn-back i {
+  margin-right: 5px;
+}
+
+.container-info__propiedad {
+  display: grid;
+  gap: 10px;
+  margin-top: 50px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 680px);
+  grid-template-rows: repeat(3, 250px);
+}
+.container-info__propiedad--img img {
+  width: 680px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.container-info__propiedad--img img:hover {
+  border: 2px solid #003399;
+}
+.container-info__propiedad--img-secundario img {
+  width: 200px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.container-info__propiedad--img-secundario img:hover {
+  border: 2px solid #003399;
+  opacity: 1;
+}
+.container-info__propiedad--informacion {
+  grid-row: 3/4;
+}
+.container-info__propiedad--informacion h2 {
+  font-size: 3em;
+}
+.container-info__propiedad--informacion button {
+  margin: 40px 0;
+  padding: 10px;
+  border: none;
+  background: #003399;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+.container-info__propiedad--informacion button:hover {
+  background: #fff;
+  border: 2px solid #003399;
+  color: #003399;
+}
+.container-info .container-service {
+  text-align: center;
+}
+.container-info .container-service__vectores {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-info .container-service__vectores img {
+  width: 80px;
+}
+.container-info .container-service__info {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.container-info .container-service__info h3 {
+  width: 80px;
+}
+.container-info .container-ubicacion-propiedad {
+  display: grid;
+  justify-content: center;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 400px);

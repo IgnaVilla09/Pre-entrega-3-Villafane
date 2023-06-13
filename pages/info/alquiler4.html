@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitte Propiedades - Inicio </title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa307ffcbe.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-container-menu">
+                <a href="../index.html"><img src="../../assets/img/logo.jpg" alt="Logo Elite Propiedades"></a>
+                <ul class="nav-container__list">
+                    <a href="../../index.html"><li class="option-menu">Inicio</li></a>
+                    <a href="../inmuebles.html"><li class="option-menu">Inmuebles</li></a>
+                    <a href="../uploadinmuebles.html"><li class="option-menu">Publica tu inmueble</li></a>
+                    <a href="../contacto.html"><li class="option-menu">Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="btn-back">
+            <a href="../inmuebles.html"><i class="fa-solid fa-arrow-left"></i>Volver</a>
+        </div>
+        <div class="container-info">
+            <div class="container-info__propiedad animate__animated animate__bounce animate__slideInDown">
+                <div class="container-info__propiedad--img">
+                    <img id="imageBox" class="principal" src="../../assets/img/Departamentos/departamento2.jpg">
+                </div>
+                <div class="container-info__propiedad--img-secundario">
+                    <img class="principal" src="../../assets/img/Departamentos/departamento2.jpg" onclick="myFunction(this)">
+                    <img src="../../assets/img/Departamentos/departamento2-1.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../assets/img/Departamentos/departamento2-2.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../assets/img/Departamentos/departamento2-3.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../assets/img/Departamentos/departamento2-4.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../assets/img/Departamentos/departamento2-5.jpg" alt="" onclick="myFunction(this)">
+                </div>
+                <div class="container-info__propiedad--informacion">
+                    <h2>ALQUILER</h2>
+                    <p>Ofrece aire acondicionado, se encuentra en Lujan de Cuyo. Ofrece aparcamiento privado. El apartamento está equipado con 1 dormitorio, 1 baño, ropa de cama, toallas, TV de pantalla plana, cocina totalmente equipada y patio con vistas al jardín.</p>
+                    <button class="">Contactar</button>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="container-service">
+                <div class="container-service__vectores">
+                    <img src="../../assets/img/vectores/bañera.png" alt="">
+                    <img src="../../assets/img/vectores/cochera.png" alt="">
+                    <img src="../../assets/img/vectores/dormitorios.png" alt="">
+                    <img src="../../assets/img/vectores/medidas.webp" alt="">
+                </div>
+                <div class="container-service__info">
+                    <h3>1 baño</h3>
+                    <h3>Cochera techada</h3>
+                    <h3>1 dormitorios</h3>
+                    <h3>180m2</h3>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="container-ubicacion-propiedad">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53538.265813377424!2d-68.90799736053408!3d-33.00004174909576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e750503408331%3A0xd4c62bb79373bea4!2sLuj%C3%A1n%20de%20Cuyo%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1686682986077!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h4>TODOS LOS DERECHOS RESERVADOS - NTECH</h4>
+            <div class="footer-container__redes">
+                <div class="footer-container__redes--Instagram"><a href="https://www.instagram.com" target="_blank"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a></div>
+                <div class="footer-container__redes--Email"><a href="mailto:correoinmobiliaria@gmail.com"><li><i class="fa-sharp fa-regular fa-at"></i>Email</li></a></div>
+                <div class="footer-container__redes--WhatsApp">  <a href="https://wa.me/" target="_blank"><li><i class="fa-brands fa-whatsapp"></i>WhatsApp</li></a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction (smallImg) {
+            var fullImg=document.getElementById("imageBox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+</html>

@@ -354,6 +354,113 @@ $TAMANIO-TITULOS: 3em;
                 }
         }
 }
+
+//Main info alquileres
+.btn-back {
+    margin: 20px 10px;
+        a {
+            text-decoration: none;
+            color: #fff;
+            background: $COLOR-SECUNDARIO;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        i {
+            margin-right: 5px;
+        }
+}
+
+.container-info {
+    &__propiedad {
+    display: grid;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(2,680px);
+    grid-template-rows: repeat(3,250px);
+
+        &--img {
+            img {
+                width: 680px;
+                height: 480px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            img:hover {
+                border: 2px solid $COLOR-SECUNDARIO;
+            }
+        }
+
+        &--img-secundario {
+            img {
+                width: 200px;
+                height: 175px;
+                object-fit: cover;
+                border-radius: 10px;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            img:hover {
+                border: 2px solid $COLOR-SECUNDARIO;
+                opacity: 1;
+            }
+        }
+
+        &--informacion {
+            grid-row: 3/4;
+
+                h2 {
+                    font-size: $TAMANIO-TITULOS;
+                } 
+
+                button {
+                    margin: 40px 0;
+                    padding: 10px;
+                    border: none;
+                    background: $COLOR-SECUNDARIO;
+                    color: #fff;
+                    font-size: 2em;
+                    cursor: pointer;      
+                }
+
+                button:hover {
+                    background: #fff;
+                    border: 2px solid $COLOR-SECUNDARIO;
+                    color: $COLOR-SECUNDARIO;
+                }
+
+                
+        }
+    }
+
+    .container-service {
+        text-align: center;
+            &__vectores {
+            display: flex;
+            justify-content: space-evenly;
+                img {
+                    width: 80px;
+                }
+            }
+            &__info {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 10px;
+                margin-top: 10px;
+                    h3 {
+                        width: 80px;
+                    }
+            }
+    }
+
+    .container-ubicacion-propiedad {
+        display: grid;
+        justify-content: center;
+    }
+}
+
 //main contacto.html
 .contact-container {
     display: grid;
