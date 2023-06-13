@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aa307ffcbe.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -51,8 +56,8 @@
         </div>
 
         <div class="destacados-container">
-            <h2>PROPIEDADES DESTACADAS</h2>
-            <div class="destacados-container__propiedades">
+            <h2 data-aos="flip-left" class="">PROPIEDADES DESTACADAS</h2>
+            <div data-aos="fade-right" class="destacados-container__propiedades">
                 <div class="destacados-container__propiedades--destacada">
                     <img src="assets/img/Departamentos/departamento 1.jpg" alt="">
                     <h4>Alquiler</h4>
@@ -91,5 +96,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
