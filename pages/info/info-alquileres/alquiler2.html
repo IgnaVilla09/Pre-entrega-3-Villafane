@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitte Propiedades - Inicio </title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa307ffcbe.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-container-menu">
+                <a href="../../../index.html"><img src="../../../assets/img/logo.jpg" alt="Logo Elite Propiedades"></a>
+                <ul class="nav-container__list">
+                    <a href="../../../index.html"><li class="option-menu">Inicio</li></a>
+                    <a href="../../inmuebles.html"><li class="option-menu">Inmuebles</li></a>
+                    <a href="../../uploadinmuebles.html"><li class="option-menu">Publica tu inmueble</li></a>
+                    <a href="../../contacto.html"><li class="option-menu">Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="btn-back">
+            <a href="../../inmuebles.html"><i class="fa-solid fa-arrow-left"></i>Volver</a>
+        </div>
+        <div class="container-info">
+            <div class="container-info__propiedad animate__animated animate__bounce animate__slideInDown">
+                <div class="container-info__propiedad--img">
+                    <img id="imageBox" class="principal" src="../../../assets/img/Departamentos/alquileres/alquiler2.jpg">
+                </div>
+                <div class="container-info__propiedad--img-secundario">
+                    <img class="principal" src="../../../assets/img/Departamentos/alquileres/alquiler2.jpg" onclick="myFunction(this)">
+                    <img src="../../../assets/img/Departamentos/alquileres/alquiler2-1.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../../assets/img/Departamentos/alquileres/alquiler2-2.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../../assets/img/Departamentos/alquileres/alquiler2-3.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../../assets/img/Departamentos/alquileres/alquiler2-4.jpg" alt="" onclick="myFunction(this)">
+                    <img src="../../../assets/img/Departamentos/alquileres/alquiler2-5.jpg" alt="" onclick="myFunction(this)">
+                </div>
+                <div class="container-info__propiedad--informacion">
+                    <h2>ALQUILER TEMPORARIO</h2>
+                    <p>La Yaya cuenta con cabañas con capacidad para 2 a 6 personas. Ofrece patio, vistas al jardín, zona de estar, TV de pantalla plana vía satélite, cocina totalmente equipada con microondas y nevera y baño privado con ducha y artículos de aseo gratuitos. La ropa de cama y las toallas se proporcionan por un suplemento.</p>
+                    <button class="">Contactar</button>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="container-service">
+                <div class="container-service__vectores">
+                    <img src="../../../assets/img/vectores/bañera.png" alt="">
+                    <img src="../../../assets/img/vectores/cochera.png" alt="">
+                    <img src="../../../assets/img/vectores/dormitorios.png" alt="">
+                    <img src="../../../assets/img/vectores/medidas.webp" alt="">
+                </div>
+                <div class="container-service__info">
+                    <h3>2 baños</h3>
+                    <h3>Cochera</h3>
+                    <h3>2 dormitorios</h3>
+                    <h3>120m2</h3>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="container-ubicacion-propiedad">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53559.333171239356!2d-68.86285882361445!3d-32.965307882640744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c960c574809%3A0x57621966b9559a27!2sMaip%C3%BA%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1686681805864!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h4>TODOS LOS DERECHOS RESERVADOS - NTECH</h4>
+            <div class="footer-container__redes">
+                <div class="footer-container__redes--Instagram"><a href="https://www.instagram.com" target="_blank"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a></div>
+                <div class="footer-container__redes--Email"><a href="mailto:correoinmobiliaria@gmail.com"><li><i class="fa-sharp fa-regular fa-at"></i>Email</li></a></div>
+                <div class="footer-container__redes--WhatsApp">  <a href="https://wa.me/" target="_blank"><li><i class="fa-brands fa-whatsapp"></i>WhatsApp</li></a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction (smallImg) {
+            var fullImg=document.getElementById("imageBox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+</html>

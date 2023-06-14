@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitte Propiedades - Inicio </title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa307ffcbe.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-container-menu">
+                <a href="../../../index.html"><img src="../../../assets/img/logo.jpg" alt="Logo Elite Propiedades"></a>
+                <ul class="nav-container__list">
+                    <a href="../../../../index.html"><li class="option-menu">Inicio</li></a>
+                    <a href="../../inmuebles.html"><li class="option-menu">Inmuebles</li></a>
+                    <a href="../../uploadinmuebles.html"><li class="option-menu">Publica tu inmueble</li></a>
+                    <a href="../../contacto.html"><li class="option-menu">Contacto</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="btn-back">
+            <a href="../../inmuebles.html"><i class="fa-solid fa-arrow-left"></i>Volver</a>
+        </div>
+        <div class="container-info">
+            <div class="container-info__propiedad animate__animated animate__bounce animate__slideInDown">
+                <div class="container-info__propiedad--img">
+                    <img id="imageBox" class="principal" src="../../../assets/img/Departamentos/comercios/comercio2.jpg">
+                </div>
+                <div class="container-info__propiedad--img-secundario">
+                    <img class="principal" src="../../../assets/img/Departamentos/comercios/comercio2.jpg" onclick="myFunction(this)">
+                    <img class="principal" src="../../../assets/img/Departamentos/comercios/comercio2-1.webp" onclick="myFunction(this)">
+                    <img class="principal" src="../../../assets/img/Departamentos/comercios/comercio2-2.jpg" onclick="myFunction(this)">
+                    <img class="principal" src="../../../assets/img/Departamentos/comercios/comercio2-3.webp" onclick="myFunction(this)">
+                    <img class="principal" src="../../../assets/img/Departamentos/comercios/comercio2-4.jpg" onclick="myFunction(this)">
+                </div>
+                <div class="container-info__propiedad--informacion">
+                    <h2>COMERCIO</h2>
+                    <p>El inmueble se encuentra reciclado con un frente de 12 metros vidriado, Emplazado en un foco comercial con alto tránsito peatonal. Dicha zona esta traccionada principalmente por la inminente apertura del complejo comercial “BOX DMZ”, estando este lindero a la propiedad, entre otras galerías similares en sus alrededores.</p>
+                    <button class="">Contactar</button>
+                </div>
+            </div>
+            
+            <div class="container-ubicacion-propiedad">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53538.26583050436!2d-68.9080831942267!3d-33.000041720871664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1686755897973!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h4>TODOS LOS DERECHOS RESERVADOS - NTECH</h4>
+            <div class="footer-container__redes">
+                <div class="footer-container__redes--Instagram"><a href="https://www.instagram.com" target="_blank"><li><i class="fa-brands fa-instagram"></i>Instagram</li></a></div>
+                <div class="footer-container__redes--Email"><a href="mailto:correoinmobiliaria@gmail.com"><li><i class="fa-sharp fa-regular fa-at"></i>Email</li></a></div>
+                <div class="footer-container__redes--WhatsApp">  <a href="https://wa.me/" target="_blank"><li><i class="fa-brands fa-whatsapp"></i>WhatsApp</li></a></div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function myFunction (smallImg) {
+            var fullImg=document.getElementById("imageBox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+</html>
