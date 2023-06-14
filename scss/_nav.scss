@@ -1,0 +1,44 @@
+//Barra navegación
+.nav-container {
+    width: 100%;
+    height: 170px;
+    background: #000;
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-top: 15px;
+        } 
+        img {
+            display: block;
+            width: 80px;
+            margin: 0 auto;
+            cursor: pointer;
+            box-shadow: 3px -3px 50px 6px rgba(255,255,255,0.3);
+        }
+
+        &__list {
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        a {
+            display: inline-block;
+            margin: 0 10px 0 10px;
+            list-style: none;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        li {
+            padding: 5px;
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        }
+
+        li:hover {
+            background: #f2f2f2;
+            border-radius: 50px;
+            color: #000;
+        }
+}

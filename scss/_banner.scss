@@ -1,0 +1,93 @@
+//Banner
+.banner-container {
+    background-image: url(https://wallpaperaccess.com/full/2178173.jpg);
+    width: 100%;
+    height: 800px;
+    color: #fff;
+    padding: 50px;
+
+    &__title {
+        display: grid;
+        grid-template-columns: 750px;
+        grid-template-rows: 90px 220px 100px;
+    }
+
+    .search-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+            input {
+                height: 50px;
+                width: 100%;
+                padding: 5px;
+                border-radius: 10px;
+                font-size: 1.23em;
+                outline: none;
+            }
+
+            input:focus {
+                border-bottom: 2px solid $COLOR-SECUNDARIO;
+            }
+
+            input::placeholder {
+                color: $COLOR-SECUNDARIO;
+                font-size: 1em;
+            }
+
+            i {
+                font-size: 25px;
+                color: #fff;
+                background: $COLOR-SECUNDARIO;
+                padding: 15px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+    }
+
+    &__img-example {
+
+        //Extends 
+
+        .img-banner-desktop {
+            width: 450px;
+            height: 300px;            
+            position: absolute;
+        }
+
+        .casa1 {
+            @extend .img-banner-desktop;
+            right: 150px;
+            top: 250px;            
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+
+        .casa2 {
+            
+            @extend .img-banner-desktop;
+            right: 450px;
+            top: 500px;            
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+
+        .casa3 {            
+            width: 320px;
+            height: 220px;
+            position: absolute;
+            right: 100px;
+            top: 610px;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+
+        img {
+            transition: all .4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+    
+}
