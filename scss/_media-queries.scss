@@ -294,6 +294,12 @@
                 width: 200px;
             }
     }
+
+    .footer-container {
+        &__navegation {
+            font-size: 12px;
+        }
+    }
 }
 
 @media screen and (max-width:281px) {
@@ -418,10 +424,19 @@
     }
 
     .footer-container {
-        height: 250px;
+        height: auto;
 
             h4 {
                 font-size: 20px;
+            }
+
+            .footer-container {
+                &__navegation {
+                    font-size: 10px;
+                    width: 240px;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                }
             }
     }
     
