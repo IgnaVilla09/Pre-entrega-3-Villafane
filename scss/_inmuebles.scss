@@ -1,4 +1,13 @@
 //main inmuebles.html
+
+.propiedades-title {
+    h1 {        
+        margin-top: 20px;
+        text-align: center;
+        font-size: $TAMANIO-TITULOS * 1.2;
+    }
+}
+
 .inmuebles-container {
      
     &__propiedades {

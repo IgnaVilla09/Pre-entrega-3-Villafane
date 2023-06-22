@@ -9,8 +9,8 @@
 
         
 
-        h2 {
-            font-size: $TAMANIO-TITULOS;
+        h1 {
+            font-size: $TAMANIO-TITULOS * 1.2;
             margin: 20px 0;
             text-align: center;
             animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;

@@ -29,21 +29,23 @@
   text-align: center;
   justify-content: center;
 }
-.nav-container a {
+.nav-container li {
   display: inline-block;
   margin: 0 10px 0 10px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+.nav-container a {
   list-style: none;
+  padding: 7px;
   color: #fff;
   text-decoration: none;
 }
-.nav-container li {
-  padding: 5px;
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
+.nav-container a:hover {
+  color: #000;
 }
 .nav-container li:hover {
   background: #f2f2f2;
   border-radius: 50px;
-  color: #000;
 }
 
 .banner-container {
@@ -152,6 +154,12 @@
   font-size: 0.9em;
 }
 
+.propiedades-title h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3.6em;
+}
+
 .inmuebles-container__propiedades {
   display: flex;
   flex-wrap: wrap;
@@ -202,8 +210,8 @@
   flex-direction: column;
   align-items: center;
 }
-.propiedades-container h2 {
-  font-size: 3em;
+.propiedades-container h1 {
+  font-size: 3.6em;
   margin: 20px 0;
   text-align: center;
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -377,6 +385,12 @@
 .container-info .container-ubicacion-propiedad {
   display: grid;
   justify-content: center;
+}
+
+.title-contact h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3.6em;
 }
 
 .contact-container {
