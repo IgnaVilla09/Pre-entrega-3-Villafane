@@ -391,6 +391,19 @@
   margin-top: 20px;
   text-align: center;
   font-size: 3.6em;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .contact-container {
@@ -456,6 +469,27 @@
   background: #fff;
   color: #003399;
   border: 2px solid #003399;
+}
+
+.newsletter-input {
+  height: 50px;
+  outline: none;
+}
+
+.service {
+  animation: flip-in-hor-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
 }
 
 .footer-container {

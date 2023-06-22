@@ -7,7 +7,21 @@
         margin-top: 20px;
         text-align: center;
         font-size: $TAMANIO-TITULOS * 1.2;
-    }
+        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+
+        @keyframes tracking-in-expand {
+            0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+            }
+            40% {
+            opacity: 0.6;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
 }
 
 .contact-container {
@@ -24,16 +38,16 @@
 
             @keyframes flip-in-hor-bottom {
                 0% {
-                  -webkit-transform: rotateX(80deg);
-                          transform: rotateX(80deg);
-                  opacity: 0;
+                    -webkit-transform: rotateX(80deg);
+                    transform: rotateX(80deg);
+                    opacity: 0;
                 }
                 100% {
-                  -webkit-transform: rotateX(0);
-                          transform: rotateX(0);
-                  opacity: 1;
+                    -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+                    opacity: 1;
                 }
-              }
+            }
         .contact-container__formulario-de-contacto {
             display: flex;
             flex-direction: column;
@@ -77,4 +91,26 @@
                     border: 2px solid $COLOR-SECUNDARIO;
                 }
         }
+}
+
+.newsletter-input {
+    height: 50px;
+    outline: none;
+}
+
+.service {
+    animation: flip-in-hor-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @keyframes flip-in-hor-bottom {
+        0% {
+            -webkit-transform: rotateX(80deg);
+                    transform: rotateX(80deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+            opacity: 1;
+        }
+    }
 }
