@@ -170,8 +170,15 @@
         height: 900px;
 
             img {
-                width: 250px;
+                width: 200px;
             }
+    }
+
+    .service {
+        &-box {
+            width: 100vw !important;
+            margin: 10px !important;
+        }
     }
     
 }
@@ -227,7 +234,6 @@
             }
         }
     }
- 
     .container-info {
         &__propiedad {
             align-items: center;
@@ -291,8 +297,14 @@
         height: 900px;
 
             img {
-                width: 200px;
+                width: 120px;
             }
+    }
+    .service {
+        &-box {
+            width: 100vw !important;
+            margin: 10px !important;
+        }
     }
 
     .footer-container {
@@ -422,6 +434,7 @@
                 width: 200px;
             }
     }
+    
 
     .footer-container {
         height: auto;
